@@ -28,9 +28,142 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
+//media breakpoints
+=r1
+	@media only screen and (max-width: "1144px")
+		@content
+=r2
+	@media only screen and (max-width: "768px")
+		@content
+=r3
+	@media only screen and (max-width: "600px")
+		@content
+=r4
+	@media only screen and (max-width: "400px")
+		@content
+
+//fonts
++font("SamsungIF Regular", samsungif_rg)
++font("SamsungIF Italic", samsungif_it)
++font("SamsungIF Bold", samsungif_bd)
++font("SamsungIF BoldItalic", samsungif_bdit)
++font("SamsungIF Black", samsungif_blk)
+
+=reg
+	font-family: "SamsungIF Regular", Arial, sans-serif
+=it
+	font-family: "SamsungIF Italic", Arial, sans-serif
+=bold
+	font-family: "SamsungIF Bold", Arial, sans-serif
+=bit
+	font-family: "SamsungIF BoldItalic", Arial, sans-serif
+=black
+	font-family: "SamsungIF Black", Arial, sans-serif
+
+//reset
+
 body
-	font-family: Arial, sans-serif
+	+reg
 	font-size: 12px
 	line-height: 1.4
 	
+h1, h2, h3, h4, h5, h6, strong, b, th
+	font-weight: normal
+
+a
+	text-decoration: none
+
 // common blocks
+
+.btn
+	display: inline-block
+	vertical-align: top
+	color: #fff
+	font-size: 18px
+	line-height: 1
+	padding: 3px 35px 5px 
+	border: 1px solid #fff
+
+.btn-green
+	display: inline-block
+	vertical-align: top
+	color: #fff
+	font-size: 20px
+	line-height: 1
+	width: 100%
+	max-width: 442px
+	text-align: center
+	padding: 19px 20px 18px 
+	background-color: rgba(0, 255, 180, 0.52)
+	box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.22)
+	position: relative
+	&:active
+		box-shadow: none
+		top: 1px
+		background: darken(rgba(0, 255, 180, 0.52), 10%)
+
+//select
+.select
+	position: relative
+	background-color: rgba(255, 255, 255, 0.71)
+	cursor: pointer
+	font-size: 18px
+	line-height: 1
+	&.is-active
+		background-color: #e3e5e8
+	&.is-chosen
+		.select
+			&__text
+				color: #000 
+	&__text
+		color: #5b5e5e
+		padding: 11px 50px 11px 15px
+		border: 1px solid #fff
+		position: relative
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			top: 0
+			bottom: 0
+			right: 0
+			width: 41px
+			border-left: 1px solid #fff
+			background: #02a8bc
+		&:after
+			+arr(17, 15, #fff, b)
+			top: 50%
+			right: 12px
+			margin-top: -7px
+	&__list
+		border: 1px solid #fff
+		border-top: none
+		display: none
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		z-index: 200
+		background-color: #e3e5e8
+		li
+			border-bottom: 1px solid #fff
+			color: #000 
+			padding: 11px 45px 
+			&:hover
+				background-color: #02a8bc
+	select
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 10px
+		width: 100%
+		height: 100%
+		color: #000 
+		visibility: hidden
+		opacity: 0
+		display: none
+		+r(768)
+			display: block
+			visibility: visible

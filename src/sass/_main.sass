@@ -1,1 +1,434 @@
-// Normally mainpage styles
+.out
+	background: url(../img/background.jpg)
+	+cover
+	background-position: top center 
+	min-width: 320px
+
+.section
+	padding: 0 10px 
+
+.inner
+	margin: 0 auto
+	+clr
+
+.promo
+	&__inner
+		max-width: 1144px
+		padding: 90px 0 40px
+		+r1
+			padding: 30px 0 
+	&__title
+		text-transform: uppercase
+		color: #4a688e
+		+bold
+		line-height: 1
+		font-size: 0
+		margin-bottom: 30px
+		strong
+			color: #fff
+			font-size: 46px
+			+r1
+				font-size: 30px
+			+r2
+				font-size: 26px
+		span
+			font-size: 40px
+			+r1
+				font-size: 26px
+			+r2
+				font-size: 24px
+	&__text, &__logo
+		display: inline-block
+		vertical-align: bottom
+		+r2
+			display: block
+	&__logo
+		width: 280px
+		+r1
+			width: 180px
+		img
+			width: 100%
+	&__text
+		padding: 0 13px 15px 0
+		+r1
+			padding-bottom: 10px
+		div
+			margin-bottom: 4px
+	&__discount
+		float: left
+		font-size: 0
+		+r1
+			width: 50%
+		+r3
+			width: 100%
+			text-align: center
+		&-text, &-img
+			display: inline-block
+			vertical-align: middle
+		&-text
+			color: #fff
+			font-size: 40px
+			line-height: 1
+			margin: 0 -12px 0 0 
+			+r1
+				font-size: 26px
+				margin: 0
+		&-img
+			width: 70px
+	&__img
+		float: right
+		margin: 0 88px 0 0 
+		+r1
+			width: 50%
+			margin: 0
+		+r3
+			width: 100%
+			max-width: 340px
+			float: none
+			margin: 0 auto
+			display: block 
+	&__rules
+		clear: left
+		padding: 185px 0 0 65px 
+		+r3
+			clear: both
+			padding: 40px 0 0 
+		&-text
+			padding-bottom: 22px
+			p
+				color: #fff
+				font-size: 14px
+				line-height: 12px
+				padding-bottom: 6px
+
+.title
+	border-top: 3px solid rgba(#fff, 0.8)
+	border-bottom: 3px solid rgba(#fff, 0.8)
+	&_blue
+		background-color: rgba(0, 181, 254, 0.5)
+	&_purple
+		background-color: rgba(170, 136, 244, 0.5)
+	&_azure
+		background-color: rgba(0, 255, 240, 0.5)
+	&_green
+		background-color: rgba(0, 255, 180, 0.5)
+	&__inner
+		line-height: 1
+		+bold
+		color: #fff
+		padding: 28px 65px
+		position: relative
+		max-width: 1144px
+		margin: 0 auto 
+		+r3
+			padding: 20px 
+		strong
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -18px
+			width: 65px
+			text-align: center
+			font-size: 36px
+			+r3
+				font-size: 22px
+				position: static
+				margin: -2px 0
+				float: left
+				width: auto
+				padding-right: 15px
+		span
+			display: block
+			overflow: hidden
+			font-size: 20px
+			+r3
+				font-size: 18px
+
+.action
+	text-align: center
+	&__title
+		padding: 55px 65px 20px
+		max-width: 1144px
+		margin: 0 auto
+		text-align: left
+		color: #cdd9ec
+		font-size: 18px
+		line-height: 1
+		+r1
+			text-align: center
+			padding: 30px 20px 
+	&__list
+		font-size: 0
+		padding-bottom: 70px
+		+r1
+			max-width: 600px
+			margin: 0 auto 
+		li
+			display: inline-block
+			vertical-align: top
+			width: 150px
+			padding-bottom: 20px
+			+r2
+				width: 50%
+				padding: 0 20px 20px 
+			+r4
+				width: 100%
+	&__text
+		color: #cdd9ec
+		font-size: 14px
+		line-height: 1.2
+	&__img
+		height: 90px
+		+vertical
+		margin-bottom: 5px
+		i
+			display: inline-block
+			vertical-align: middle
+i
+	&.ic
+		display: inline-block
+		vertical-align: top
+	&.is-sandglass
+		+s(sandglass)
+	&.is-monitor
+		+s(monitor)
+	&.is-monitor-big
+		+s(monitor-big)
+	&.is-eye
+		+s(eye)
+	&.is-stars
+		+s(stars)
+	&.is-grid
+		+s(grid)
+	&.is-settings
+		+s(settings)
+	&.is-pencil
+		+s(pencil)
+	&.is-tv
+		+s(tv)
+	&.is-monitor-logo
+		+s(monitor-logo)
+	&.is-sale
+		+s(sale)
+.sales
+	&__list
+		text-align: center
+		font-size: 0
+		max-width: 1144px
+		margin: 0 auto 
+		padding: 110px 0 115px
+		+r1
+			max-width: 600px
+			padding: 50px 0 
+		li
+			display: inline-block
+			vertical-align: top
+			width: 33.33%
+			+r1
+				width: 50%
+				padding-bottom: 20px
+			+r3
+				width: 100%
+	&__plus, &__result
+		position: absolute
+		top: 50%
+		left: 100%
+		margin-left: -23px
+		width: 45px
+		+r1
+			display: none
+	&__plus
+		height: 45px
+		margin-top: -22px
+		&:before, &:after
+			content: "" 
+			background: #fff
+			position: absolute
+		&:before
+			top: 0
+			bottom: 0
+			left: 50%
+			width: 9px
+			margin-left: -4px
+		&:after
+			top: 50%
+			left: 0
+			right: 0
+			margin-top: -5px
+			height: 9px
+	&__result
+		height: 28px
+		margin-top: -14px
+		border-top: 9px solid #fff
+		border-bottom: 9px solid #fff
+	&__img
+		+vertical
+		position: relative
+		height: 250px
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-tv
+				margin-top: 30px
+			&.is-monitor-logo
+			&.is-sale
+				margin-top: 30px
+		span
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			color: #fff
+			font-size: 48px
+			+bold
+			line-height: 1
+	&__text
+		color: #fff
+		font-size: 18px
+		line-height: 1.2
+		max-width: 200px
+		margin: 0 auto
+		padding: 10px 0 0  
+
+.choice
+	&__inner
+		max-width: 1030px
+		padding: 90px 0 70px 
+		+r1
+			padding: 30px 0 
+	&__top
+		+clr
+	&__img
+		width: 270px
+		float: left
+		text-align: center
+		font-size: 0
+		+r1
+			float: none
+			margin: 0 auto 30px
+	&__filter
+		float: right
+		width: 512px
+		+r1
+			float: none
+			margin: 0 auto 
+			width: 100%
+			max-width: 400px
+	&__field
+		position: relative
+		margin-bottom: 28px
+		+r1
+			margin-bottom: 20px
+		&_mod
+			margin-bottom: 43px
+			+r1
+				margin-bottom: 20px
+	&__label
+		position: absolute
+		top: 0
+		right: 100%
+		color: #fff
+		font-size: 18px
+		line-height: 1
+		padding: 12px 0 
+		white-space: nowrap
+		margin-right: 25px 
+		+r1
+			position: static
+			white-space: normal
+			margin: 0
+	&__text
+		color: #fff
+		font-size: 14px
+		line-height: 1
+		margin: 0 -20px 
+		padding: 10px 0 0 
+		+r1
+			margin: 0
+			padding: 10px 0 0 
+	&__title
+		font-size: 20px
+		color: #fff
+		text-align: center
+		margin: 50px 0 20px
+		+r1
+			margin: 20px 0 
+		strong
+			+bold
+	&__category
+		border: 1px solid #fff
+		border-bottom: none
+		margin-bottom: 25px
+		li
+			+clr
+			background-color: rgba(227, 229, 232, 0.71)
+			border-bottom: 1px solid #fff
+			+r3
+				padding: 10px 0 
+	&__left, &__right
+		width: 50%
+		float: left
+		font-size: 18px
+		line-height: 1
+		padding: 11px 20px
+		+r2
+			font-size: 16px
+		+r3
+			width: 100%
+			padding: 3px 20px 
+	&__left
+		text-align: right
+		color: #5b5e5e
+		+r3
+			text-align: center
+	&__right
+		text-align: left
+		color: #000
+		+r3
+			text-align: center
+	&__link
+		text-align: right
+		margin-bottom: 70px
+		+r3
+			margin-bottom: 40px
+		a
+			color: #fff
+			font-size: 20px
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	&__bottom
+		text-align: center
+		.btn-green
+			margin-bottom: 50px
+			+r3
+				margin-bottom: 40px
+		&-text
+			font-size: 18px
+			color: #fff
+			line-height: 1 
+			margin-bottom: 100px
+			+r3
+				font-size: 16px
+				margin-bottom: 40px
+			a
+				+bold
+				text-decoration: underline
+				color: #fff 
+				&:hover
+					text-decoration: none
+	&__discount
+		color: #fff
+		font-size: 33px
+		line-height: 1
+		margin-bottom: 130px
+		+r3
+			font-size: 24px
+			margin-bottom: 30px
+		span 
+			color: #05d2b8
+		strong
+			+bold
+			font-size: 46px
+			+r3
+				font-size: 28px

@@ -4,6 +4,213 @@ block title
 	title Title of template
 
 block content
-	.out
-		+icon("octa")
-		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsum maxime, tempora deserunt minima suscipit voluptatem possimus ratione inventore eveniet autem esse accusamus eos quibusdam consequuntur quia officiis eum! Et!
+	.section.promo
+		.inner.promo__inner
+			.promo__title
+				.promo__text
+					div
+						strong Обміняйте
+					span свій застарілий телевізор  
+					strong на новий
+				.promo__logo
+					img(src="img/logo.png", alt="")
+			.promo__discount 
+				.promo__discount-text зі знижкою до 
+				img.promo__discount-img(src="img/discount.png", alt="")
+			img.promo__img(src="img/tv.png", alt="")
+			.promo__rules
+				.promo__rules-text
+					p Мається на увазі можливість отримання знижки до 10% на новий телевізор Samsung за умови виконання правил Акції. 
+					p Акція діє на території України з 24 грудня 2015 року по 15 лютого 2016 року. 
+				a(href="#").btn Офіційні правила
+	.title.title_blue
+		.title__inner 
+			span Ви вже давно мрієте про новий телевізор, але ще не наважились обрати модель?
+	.section.action
+		.action__title Оцініть переваги телевізорів із вигнутим екраном. 
+		ul.action__list
+			li
+				.action__img
+					i.is-sandglass
+				.action__text Найбільш сучасне рішення у світі телевізорів
+			li
+				.action__img
+					i.is-monitor
+				.action__text Відмінна якість зображення та комфортний перегляд на вигнутому екрані Curved TV.
+			li
+				.action__img
+					i.is-eye
+				.action__text Рівномірна відстань від очей до кожного елемента зображення
+			li
+				.action__img
+					i.is-stars
+				.action__text Менша кількість відблісків завдяки вигнутій формі екрана
+			li
+				.action__img
+					i.is-grid
+				.action__text Найсучасніші технології забезпечують дивовижну роздільну здатність
+			li
+				.action__img
+					i.is-settings
+				.action__text Провідні рішення задля покращення зображення, розширення кольорової гами та іншого
+			li
+				.action__img
+					i.is-pencil
+				.action__text Унікальний дизайн, що неодмінно зробить телевізор прикрасою вашого інтер’єру
+	.title.title_purple
+		.title__inner 
+			span Отримайте Знижку до 10%!   
+	.section.sales
+		ul.sales__list
+			li.sales__first
+				.sales__img
+					span 1.
+					i.is-tv
+					.sales__plus
+				.sales__text Вкажіть параметри свого старого телевізора
+			li
+				.sales__img
+					span 2.
+					i.is-monitor-logo
+					.sales__result
+				.sales__text Оберіть новенький Samsung Curved TV
+			li.sales__last
+				.sales__img
+					span 3.
+					i.is-sale
+				.sales__text Дізнайтеся розмір знижки
+	.title.title_azure
+		.title__inner 
+			strong 1
+			span Вкажіть параметри свого старого телевізора
+	.section.choice
+		.choice__inner.inner
+			.choice__top
+				.choice__img
+					i.ic.is-tv
+				.choice__filter
+					.choice__field.choice__field_mod
+						.choice__label Тип телевізора:
+						.select.js-select
+							.select__text.js-select-text Оберіть із випадаючого списку
+							ul.select__list.js-select-list
+								li З електронною трубкою
+								li Плазмовий
+								li LCD \ LED
+							select
+								option(value="З електронною трубкою") З електронною трубкою
+								option(value="Плазмовий") Плазмовий
+								option(value="LCD \ LED") LCD \ LED
+					.choice__field.choice__field_mod
+						.choice__label Діагональ:
+						.select.js-select
+							.select__text.js-select-text Оберіть із випадаючого списку
+							ul.select__list.js-select-list
+								li <32
+								li 32
+								li 40
+								li 42
+								li 46
+								li >55
+							select
+								option(value="<32") <32
+								option(value="32") 32
+								option(value="40") 40
+								option(value="42") 42
+								option(value="46") 46
+								option(value=">55") >55
+			.choice__text В рамках цієї акції ми приймаємо телевізори в будь-якому стані, байдуже, функціонують вони чи ні, в коробці чи без коробки. Вам також не потрібно мати чек на старий телевізор. 
+	.title.title_green
+		.title__inner 
+			strong 2
+			span Оберіть акційну модель Curved TV   
+	.section.choice
+		.choice__inner.inner
+			.choice__top
+				.choice__img
+					i.ic.is-monitor-big
+				.choice__filter
+					.choice__field
+						.choice__label Діагональ:
+						.select.js-select
+							.select__text.js-select-text Оберіть із випадаючого списку
+							ul.select__list.js-select-list
+								li 40
+								li 48
+								li 55
+								li 65
+								li 78
+								li 88
+							select
+								option(value="40") 40
+								option(value="48") 48
+								option(value="55") 55
+								option(value="65") 65
+								option(value="78") 78
+								option(value="88") 88
+					.choice__field
+						.choice__label Роздільна здатність:
+						.select.js-select
+							.select__text.js-select-text Оберіть із випадаючого списку
+							ul.select__list.js-select-list
+								li UHD - 3840 x 2160 
+								li FullHD - 1920 х 1080
+							select
+								option(value="UHD - 3840 x 2160 ") UHD - 3840 x 2160 
+								option(value="FullHD - 1920 х 1080") FullHD - 1920 х 1080
+					.choice__field
+						.choice__label Модель:
+						.select.js-select
+							.select__text.js-select-text Оберіть із випадаючого списку
+							ul.select__list.js-select-list
+								li J6500
+								li J6590
+								li JU6600
+								li JU6610
+								li JU6690
+								li JU7500
+								li JS8500
+								li JS9000
+								li JS9500
+							select
+								option(value="J6500") J6500
+								option(value="J6590") J6590
+								option(value="JU6600") JU6600
+								option(value="JU6610") JU6610
+								option(value="JU6690") JU6690
+								option(value="JU7500") JU7500
+								option(value="JS8500") JS8500
+								option(value="JS9000") JS9000
+								option(value="JS9500") JS9500
+			.choice__title Технічні характеристики моделі 
+				strong JS9500
+				| :
+			ul.choice__category
+				li
+					.choice__left Категорія:
+					.choice__right SUHD TV
+				li
+					.choice__left Діагональ:
+					.choice__right 88”, 78”, 65”
+				li
+					.choice__left Роздільна здатність:
+					.choice__right UHD  - 3840 x 2160
+				li
+					.choice__left Smart TV:
+					.choice__right +
+				li
+					.choice__left Вигнутий екран:
+					.choice__right +
+				li
+					.choice__left Покращення якості зображення:
+					.choice__right SUHD Remastering Engine
+			.choice__link
+				a(href="#") Детальніше на сайті
+			.choice__bottom
+				a(href="#").btn-green Дізнатися знижку
+				.choice__discount Ваша знижка: 
+					strong
+						span ХХ 
+						| %
+				.choice__bottom-text Детальну інформацію щодо знижок можна переглянути у файлі 
+					a(href="#") за посиланням
